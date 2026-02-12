@@ -11,6 +11,7 @@ function Setup(){
     // var endTime;
     // var ID;
 
+    //dummy params, echte params sollten über die inputs erstellt, und als JSON versendet werden
     const params = [
         {
         popSize: 100000, 
@@ -126,7 +127,7 @@ function Setup(){
                     </div>
                 </div>
                 <div className="button-container">
-                    <Link to={"/result"}  className="start-button">Sim starten</Link>
+                    <Link to={"/received"}  className="start-button">Sim starten</Link>
                 </div>                 
             </div>       
             <Footer />        

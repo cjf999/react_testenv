@@ -13,11 +13,13 @@ import Result from './pages/Result.tsx'
 import HistoryItems from './pages/HistoryItems.tsx'
 // import Navbar from './components/Navbar.tsx'
 import NotFound from './pages/NotFound.tsx'
+import SimReceived from './pages/SimReceived.tsx'
 
 const router = createBrowserRouter([
   {path: "/", element: <App />}, //default route
   {path: "*", element: <NotFound />}, //wenn nicht auflösbar, dann gehe hier hin (404)
   {path: "/setup", element: <Setup />},
+  {path: "/received", element: <SimReceived />},
   {path: "/compare", element: <Compare />},
   {path: "/result", element: <Result />},
   {path: "/history", element: <History />},
