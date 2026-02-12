@@ -1,0 +1,190 @@
+:root {
+  font-family: system-ui, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+
+  background-color: #f9f9f9;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+#root {
+  padding-top: 66px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.navbar{
+  filter: drop-shadow(0 0 0.5rem grey);
+  background-color: #E1E4E8;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navbar-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #1F2933;
+  padding: 0 50px;
+}
+
+.navbar-content ul{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  gap: 50px;
+}
+
+.navbar-content li{
+  background-color: #2563EB;
+  border-radius: 7px;
+  
+}
+
+.navbar-content a{
+  display: flex;
+  align-items: center;
+  color: #F7F8FA;
+  text-decoration: inherit;
+  height: 100%;
+  padding: 5px;
+}
+
+.setup-link{
+  text-decoration: none;
+  background-color: #2563EB;
+  border-radius: 7px;
+}
+
+.setup-link:hover{
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
+  box-shadow: 1px 1px 15px #888888;
+
+  border-radius: 7px;
+}
+
+/* ts brokey and not workey */
+.setup-link.active{
+  background-color: #F88500;
+}
+
+/* er macht aus <Link /> einen <a /> tag aber es passiert nix (aber auch noch nicht im scope der abfrage) */
+.navbar-content a.active{
+  background-color: #F88500;
+}
+
+.navbar-content li:hover{
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  transition:.2s;
+  box-shadow: 1px 1px 15px #888888;
+
+  border-radius: 7px;
+}
+
+.view-container{
+  background-color: #d7d7d7;
+  padding: 20px;
+}
+
+.container{
+  margin: 50px;
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 1.2em;
+  color: #1F2933;
+}
+
+h2 {
+  color: #1F2933;
+}
+
+p {
+  color: #1F2933;
+  font-size: large; 
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin-top: auto;
+
+  height: 80px;
+  background-color: #004B5A;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.footer-content p{
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.input-rows{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+
+}
+
+.param{
+  background-color: #E1E4E8;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.setup-row{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding-top: 40px;
+
+}
+
+.button-container{
+  align-self: center;
+}
+
+.start-button{
+ text-decoration: none;
+ color: #ffffff;
+ background-color: #2563EB;
+ font-weight: 700;
+ padding: 30px;
+ border-radius: 7px;
+}
